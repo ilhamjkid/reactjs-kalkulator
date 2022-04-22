@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollHide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .buttonCalc {
+    @apply bg-light dark:bg-dark shadow-DropShadowLightLite dark:shadow-DropShadowDarkLite h-20 rounded-xl text-2xl font-semibold lg:h-14 lg:text-xl;
+  }
+  .btnToggleMode {
+    @apply bg-light dark:bg-dark pt-1 pb-2 px-2 text-3xl rounded-lg m-2;
+  }
+  .toggleUnactive {
+    @apply shadow-DropShadowLightVerryLite dark:shadow-DropShadowDarkVerryLite;
+  }
+  .toggleActive {
+    @apply shadow-InnerShadowLightVerryLite dark:shadow-InnerShadowDarkVerryLite;
+  }
+}
